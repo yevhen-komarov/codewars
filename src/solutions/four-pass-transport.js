@@ -88,7 +88,7 @@ function getRoute(stations) {
 						}
 					}
 
-					parent = parents[finish];
+					let parent = parents[finish];
 					if (!parent) {
 						partsRoute = null;
 						break;
@@ -117,5 +117,4 @@ function getRoute(stations) {
 	return minRoute;
 }
 
-//if you prefer to see an overhead view of the factory floor with any failed test results, uncomment the line below:
-show_graph_debug = true;
+export default fourPass;

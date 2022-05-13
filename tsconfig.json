@@ -1,18 +1,25 @@
 {
 	"compilerOptions": {
-		"module": "commonjs",
+		"module": "ESNext",
 		"declaration": true,
 		"removeComments": true,
 		"emitDecoratorMetadata": true,
 		"experimentalDecorators": true,
 		"preserveWatchOutput": true,
-		"target": "es2017",
+		"target": "ES2017",
 		"sourceMap": true,
 		"outDir": "./dist",
 		"incremental": true,
 		"noImplicitAny": true,
-		"noImplicitReturns": true
+		"noImplicitReturns": true,
+		"moduleResolution": "node"
+	},
+	"ts-node": {
+		"esm": true
 	},
 	"exclude": ["node_modules", "dist"],
-	"include": ["src/**/*"]
+	"include": ["**/*.ts", "src/**/*"],
+	"paths": {
+		"*.ts": ["*"]
+	}
 }

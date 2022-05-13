@@ -1,4 +1,4 @@
-export function calc(expression: string): number {
+function calc(expression: string): number {
 	return +calcExpression(expression);
 }
 
@@ -40,3 +40,5 @@ function calcBinaryOperator(expression: string, operator: string): string {
 		}
 	});
 }
+
+export default calc;
