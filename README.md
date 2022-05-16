@@ -1,3 +1,7 @@
+# Valid Parentheses
+
+https://www.codewars.com/kata/52774a314c2333f0a7000688/train/javascript
+
 # Battleship field validator
 
 https://www.codewars.com/kata/52bb6539a4cf1b12d90005b7
