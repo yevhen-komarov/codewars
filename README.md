@@ -1,3 +1,7 @@
+# Sum by Factors
+
+https://www.codewars.com/kata/54d496788776e49e6b00052f/train/typescript
+
 # Valid Parentheses
 
 https://www.codewars.com/kata/52774a314c2333f0a7000688/train/javascript
