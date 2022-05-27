@@ -1,4 +1,4 @@
 // @ts-ignore
-import { testSolution } from './solutions/sum-by-factors.ts';
+import { testSolution } from './solutions/square-into-squares.ts';
 
 testSolution();
