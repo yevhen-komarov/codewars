@@ -51,7 +51,7 @@ function _solveExpression(exp) {
   return -1;
 }
 
-function solveExpression(exp) {
+export function solveExpression(exp) {
   exp = exp.replaceAll('--', '+');
 
   for (let d = 0; d < 10; d++) {
@@ -90,23 +90,4 @@ function solveExpression(exp) {
 function valid(d, n) {
   const x = n.replace('-', '');
   return d || x.length === 1 || x[0] !== '0';
-}
-
-export function testSolution() {
-  const data = [
-    ['1+1=?', 2],
-    ['123*45?=5?088', 6],
-    ['-5?*-1=5?', 0],
-    ['19--45=5?', -1],
-    ['??*??=302?', 5],
-    ['?*11=??', 2],
-    ['-?*11=-??', 2],
-    ['??*1=??', 2],
-    ['??+??=??', -1],
-    ['-25-?=-34', 9],
-    ['123?45+?=123?45', 0],
-    ['-?56373--9216=-?47157', 8],
-  ];
-
-  for (let [exp, expected] of data) console.log(solveExpression(exp), expected);
 }

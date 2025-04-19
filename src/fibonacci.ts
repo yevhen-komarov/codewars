@@ -1,8 +1,4 @@
-// import { testSolution } from './solutions/valid-parentheses.js';
-
-// testSolution();
-
-function fibonacci(number) {
+export function fibonacci(number) {
   function fibonacciInner(number) {
     if (number === 0) {
       return [0];
@@ -17,9 +13,3 @@ function fibonacci(number) {
 
   return fibonacciInner(number);
 }
-
-console.log(fibonacci(0));
-console.log(fibonacci(1));
-console.log(fibonacci(2));
-console.log(fibonacci(4));
-console.log(fibonacci(15));
