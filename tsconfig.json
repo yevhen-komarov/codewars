@@ -1,25 +1,22 @@
 {
-	"compilerOptions": {
-		"module": "ESNext",
-		"declaration": true,
-		"removeComments": true,
-		"emitDecoratorMetadata": true,
-		"experimentalDecorators": true,
-		"preserveWatchOutput": true,
-		"target": "ES2017",
-		"sourceMap": true,
-		"outDir": "./dist",
-		"incremental": true,
-		"noImplicitAny": true,
-		"noImplicitReturns": true,
-		"moduleResolution": "node"
-	},
-	"ts-node": {
-		"esm": true
-	},
-	"exclude": ["node_modules", "dist"],
-	"include": ["**/*.ts", "src/**/*"],
-	"paths": {
-		"*.ts": ["*"]
-	}
+  "compilerOptions": {
+    "module": "nodenext",
+    "moduleResolution": "nodenext",
+    "declaration": true,
+    "removeComments": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "allowSyntheticDefaultImports": true,
+    "target": "ES2023",
+    "sourceMap": true,
+    "outDir": "./dist",
+    "baseUrl": "./",
+    "incremental": true,
+    "skipLibCheck": true,
+    "strictNullChecks": true,
+    "forceConsistentCasingInFileNames": true,
+    "noImplicitAny": false,
+    "strictBindCallApply": false,
+    "noFallthroughCasesInSwitch": false
+  }
 }
