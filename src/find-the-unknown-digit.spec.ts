@@ -1,5 +1,4 @@
-import { expect } from 'chai';
-import { solveExpression } from './find-the-unknown-digit.js';
+import { solveExpression } from './find-the-unknown-digit';
 
 describe('solveExpression', () => {
   const testCases = [
@@ -20,7 +19,7 @@ describe('solveExpression', () => {
   testCases.forEach(({ expression, expected }) => {
     it(`should return ${expected} for expression "${expression}"`, () => {
       const result = solveExpression(expression);
-      expect(result).to.equal(expected);
+      expect(result).toEqual(expected);
     });
   });
 });

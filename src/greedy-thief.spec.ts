@@ -1,5 +1,4 @@
-import { expect } from 'chai';
-import { greedyThief } from './greedy-thief.js';
+import { greedyThief } from './greedy-thief';
 
 describe('greedyThief', () => {
   it('should return the correct items for a basic example', () => {
@@ -16,7 +15,7 @@ describe('greedyThief', () => {
       { weight: 2, price: 3 },
       { weight: 4, price: 6 },
     ];
-    expect(greedyThief(items, n)).to.deep.equal(expected);
+    expect(greedyThief(items, n)).toEqual(expected);
   });
 
   it('should return the item with the highest price when only one item fits', () => {
@@ -29,7 +28,7 @@ describe('greedyThief', () => {
     ];
     const n = 10;
     const expected = [{ weight: 9, price: 5 }];
-    expect(greedyThief(items, n)).to.deep.equal(expected);
+    expect(greedyThief(items, n)).toEqual(expected);
   });
 
   it.skip('should return one valid result when multiple solutions exist', () => {
@@ -46,7 +45,7 @@ describe('greedyThief', () => {
       { weight: 3, price: 3 },
       { weight: 5, price: 5 },
     ];
-    expect(greedyThief(items, n)).to.deep.equal(expected);
+    expect(greedyThief(items, n)).toEqual(expected);
   });
 
   it.skip('should handle items with zero weight correctly', () => {
@@ -65,7 +64,7 @@ describe('greedyThief', () => {
       { weight: 0, price: 2 },
       { weight: 10, price: 10 },
     ];
-    expect(greedyThief(items, n)).to.deep.equal(expected);
+    expect(greedyThief(items, n)).toEqual(expected);
   });
 
   it('should return an empty array when no items fit', () => {
@@ -78,7 +77,7 @@ describe('greedyThief', () => {
     ];
     const n = 8;
     const expected = [];
-    expect(greedyThief(items, n)).to.deep.equal(expected);
+    expect(greedyThief(items, n)).toEqual(expected);
   });
 
   it('should handle a complex example with multiple items', () => {
@@ -141,6 +140,6 @@ describe('greedyThief', () => {
       { weight: 0, price: 10 },
       { weight: 12, price: 57 },
     ];
-    expect(greedyThief(items, n)).to.deep.equal(expected);
+    expect(greedyThief(items, n)).toEqual(expected);
   });
 });
